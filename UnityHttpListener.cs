@@ -82,8 +82,6 @@ public class UnityHttpListener : MonoBehaviour
         // Obtain a response object.
         HttpListenerResponse response = context.Response;
         // Construct a response.
-        //string responseString = "<HTML><BODY> Hello world!</BODY></HTML>";
-        //string responseString = $"{{ \"value\": {echo} }}";
         string responseString = echo;
         byte[] buffer = System.Text.Encoding.UTF8.GetBytes(responseString);
         // Get a response stream and write the response to it.
